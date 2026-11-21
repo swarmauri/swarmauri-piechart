@@ -25,5 +25,10 @@
     "type": "git",
     "url": "git+https://github.com/gradio-app/gradio.git",
     "directory": "js/simpletextbox"
+  },
+  "overrides": {
+    "@gradio/statustracker@0.7.5": {
+      "dompurify": "3.4.17"
+    }
   }
 }
