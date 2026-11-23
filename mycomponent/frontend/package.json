@@ -8,18 +8,19 @@
   "private": false,
   "main_changeset": true,
   "exports": {
-    ".": "./Index.svelte",
-    "./example": "./Example.svelte",
+    ".": { "gradio": "./Index.svelte", "default": "./Index.svelte" },
+    "./example": { "gradio": "./Example.svelte", "default": "./Example.svelte" },
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@gradio/atoms": "0.8.0",
-    "@gradio/icons": "0.7.1",
-    "@gradio/statustracker": "0.7.5",
-    "@gradio/utils": "0.6.0"
+    "@gradio/atoms": "0.26.3",
+    "@gradio/icons": "0.16.0",
+    "@gradio/statustracker": "0.16.0",
+    "@gradio/utils": "0.15.0"
   },
   "devDependencies": {
-    "@gradio/preview": "0.11.0"
+    "@gradio/preview": "0.17.1",
+    "svelte": "5.59.1"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,7 @@
     "directory": "js/simpletextbox"
   },
   "overrides": {
-    "@gradio/statustracker@0.7.5": {
+    "@gradio/statustracker@0.16.0": {
       "dompurify": "3.4.17"
     }
   }
